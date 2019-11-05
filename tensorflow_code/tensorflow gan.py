@@ -280,7 +280,7 @@ def main():
 		aaa = int1[:,i]
 		bbb = int2[:,i]
 		MAPE.append(np.mean(np.abs((bbb - aaa) / bbb)))
-	print(MAPE)
+	print('training result:',MAPE[0])
 	
 	localtime = time.asctime(time.localtime(time.time()))
 	print('Endding Time :', localtime)
